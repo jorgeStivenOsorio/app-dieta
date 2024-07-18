@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dieta</title>
+    <title>Registro de Dietas</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Esta es mi app dieta</h1>
-    
+    <div class="container">
+        <h1>Registro de Dietas</h1>
+        <form id="dieta-form">
+            <div class="form-group">
+                <label for="nombre">Nombre de la Dieta:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="dia">Día:</label>
+                <select id="dia" name="dia">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tipo_comida">Tipo de Comida:</label>
+                <select id="tipo_comida" name="tipo_comida">
+                    <option value="Desayuno">Desayuno</option>
+                    <option value="Almuerzo">Almuerzo</option>
+                    <option value="Cena">Cena</option>
+                    <option value="Snack">Snack</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="opcion">Opción:</label>
+                <input type="text" id="opcion" name="opcion" required>
+            </div>
+            <div class="form-group">
+                <label for="productos">Productos:</label>
+                <textarea id="productos" name="productos" rows="5" required></textarea>
+            </div>
+            <button type="submit">Registrar Dieta</button>
+        </form>
+    </div>
+    <script src="js/dieta.js"></script>
 </body>
 </html>
